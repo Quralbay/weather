@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://e0.pxfuel.com/wallpapers/277/451/desktop-wallpaper-full-moon-on-purple-night-background.jpg') center / cover;
+    .container {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        .item {
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            &:first-child {
+                background-color: rgba(0, 0, 0, 0.6);
+                border-radius: 10px;
+            }
+         h2 {
+            font-size: 60px;
+        }
+         h1 {
+            font-size: 110px;
+        }
+         h3 {
+            font-size: 40px;
+         }
+         i {
+            font-size: 40px;
+         }
+
+         input {
+            padding: 20px 40px;
+            width: 500px;
+            font-size: 32px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            border: none;
+            outline: none;
+         }
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .item {
+            width: 90%;
+
+            h2{
+                font-size: 40px !important;
+            }
+
+            &:last-child {
+                padding: 0 !important; 
+            }
+
+            input {
+                width: 100% !important;
+            }
+        }
+    }
+}
